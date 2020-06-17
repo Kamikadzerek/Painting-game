@@ -1,7 +1,7 @@
 const colors = ['#fafafa', '#c8c8c8', '#969696', '#646464', '#000000']
 var matrixSize = 10;
 
-function generateMatrix(){
+function generateMatrix(){ //generate matrix of div
     for ( let i = 0; i < matrixSize; i++) {
         for ( let j = 0; j < matrixSize; j++) {
             var div = document.createElement("div");
@@ -19,7 +19,7 @@ function generateMatrix(){
       } 
 }
 
-function rgbToHex(rgb) {
+function rgbToHex(rgb) { //convert rgb string to hex string
     rgb = rgb.slice(4, -1).split(', ');
     return '#' + parseInt(rgb[0]).toString(16) + parseInt(rgb[1]).toString(16) + parseInt(rgb[2]).toString(16);
 }
